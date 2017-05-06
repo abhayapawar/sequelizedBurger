@@ -20,7 +20,7 @@ module.exports = function(app) {
 
   // GET route for getting all of the burgers
   app.get("/api/burger", function(req, res) {
-    console.log("Pankaj GET called");
+
     // findAll returns all entries for a table when used with no options
     db.burger.findAll({}).then(function(results) {
       var hbsObject = {
