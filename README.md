@@ -1,1 +1,2 @@
-# sequelizedBurger
+This burger app is similar to the previous app: https://github.com/abhayapawar/burger but built with sequalize ORM (Object-Relational Mapping).
+The burger app will allow users to enter burger information which will create a burger list in mysql database and display the information.
