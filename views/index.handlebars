@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="jumbotron">
+    <h2 class="text-center">Eat Da Burger</h2>
+  </div>
+</div>  
+<div class="container">
+  <div class="row">
+  <div class="col-md-6 col-md-offset-3">
+        {{#each burger}}
+          {{#unless this.devoured}}
+            <div class="mainlistitem">
+              <div class="items">
+               <span>
+                {{this.burger_name}}
+                </span>
+              </div> 
+              <div class="formdiv">
+                  <form action="/burger{{this.id}}?_method=PUT" method="POST" id="displayForm">
+                    <input type="hidden" name="devour" value="true">
+                    <button type="submit" id="buttontag">Devour</button>
+                  </form>
+              </div>
+            </div>
+            <br>
+          {{/unless}}
+        {{/each}}
+    </div>
+  </div>
+</div>
+    <div class="row">
+     <div class="col-md-offset-3 col-md-4">
+      <form class="create-update-form" action="/burger" method="POST">
+        <div class="form-group">
+          <label for="bu"></label>
+          <textarea rows="3" cols="30" id="burgerBox" name="name" placeholder="Enter a burger"></textarea>
+        </div>
+        <div class="centerAlign">
+          <button type="submit">Add Burger</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

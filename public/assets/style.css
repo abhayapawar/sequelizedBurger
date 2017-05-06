@@ -1,0 +1,70 @@
+body {
+	font-size: 18px;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: orange;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+.jumbotron {
+	background-color: orange;
+}
+
+.img-responsive {
+	margin: auto;
+	width: 15%;
+}
+
+.mainlistitem {
+	clear: both;
+}
+
+.items {
+	float: left;
+	border-style: solid;
+	border-radius: 25%;
+	margin: 5px 0px;
+	padding: 5px;
+	background-color: white;
+}
+
+#devouredItems:empty {
+	display: none;
+	background-color: inherit;
+	border-style: none;
+}
+
+#devouredItems {
+	float: left;
+	border-style: solid;
+	border-radius: 25%;
+	margin: 5px 0px;
+	padding: 5px;
+	background-color: white;
+}
+
+.formdiv {
+	float: right;
+/*	margin: 5px 100px 5px 0px;*/
+	padding: 5px;
+}
+
+#addBurgerhead {
+	text-align: center;
+}
+
+.centerAlign {
+
+}
+
+#burgerBox {
+	width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+	#burgerAte {
+		margin-top: 30px;
+	}
+}
